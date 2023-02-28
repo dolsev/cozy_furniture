@@ -38,8 +38,8 @@ function Slider() {
 
             </div>
             <div className='icons'>
-                <div className='icon' onClick={prevSlide}><KeyboardArrowLeftIcon/></div>
-                <div className='icon' onClick={nextSlide}><KeyboardArrowRightIcon/></div>
+                <div className='icon' onClick={prevSlide} ><KeyboardArrowLeftIcon/></div>
+                <div className='icon' onClick={nextSlide} ><KeyboardArrowRightIcon/></div>
             </div>
         </div>
     );
