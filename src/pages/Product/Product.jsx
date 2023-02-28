@@ -38,7 +38,7 @@ const Product = () => {
         <div className='info'>
             <span>Vendor: IP Platov</span>
             <span>Product Type: Chair</span>
-            <span>Tag:Chair,black</span>
+            <span>Tag:Chair, black</span>
         </div>
         <hr/>
         <div className='info'>
