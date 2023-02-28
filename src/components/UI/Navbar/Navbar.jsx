@@ -44,11 +44,12 @@ const Navbar = () => {
                         <div className='item'>
                             <Link className='link' to='/products/2'>Stores</Link>
                         </div>
-                            <div className='icons'><SearchIcon/>
-                       <PersonOutlineIcon/>
-                  <FavoriteBorderOutlinedIcon/>
+                            <div className='icons'>
+                                <SearchIcon  className='icon'/>
+                                <PersonOutlineIcon className='icon'/>
+                                <FavoriteBorderOutlinedIcon className='icon'/>
                         <div className='cartIcon' onClick={()=>setOpen(!open)}>
-                      <ShoppingCartOutlinedIcon/><span>0</span>
+                      <ShoppingCartOutlinedIcon className='icon'/><span>0</span>
                         </div>
                             </div>
                     </div>

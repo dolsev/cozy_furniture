@@ -53,4 +53,30 @@
   justify-content: center;
 }
 
+@media screen and (max-width: 1130px) {
+  .navbar {
+    height: 40px;
+  }
+  .navbar .wrapper {
+    justify-content: flex-start;
+    padding: 10px 10px;
+  }
+  .navbar .wrapper .left,
+  .navbar .wrapper .center {
+    display: none;
+  }
+  .navbar .wrapper .right {
+    gap: 10px;
+  }
+  .navbar .wrapper .right .item .link {
+    font-size: 12px;
+  }
+  .navbar .wrapper .right .icons {
+    gap: 5px;
+  }
+  .navbar .wrapper .right .icons .icon {
+    height: 15px;
+  }
+}
+
 /*# sourceMappingURL=Navbar.css.map */

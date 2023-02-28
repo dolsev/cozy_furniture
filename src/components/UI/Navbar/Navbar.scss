@@ -1,3 +1,5 @@
+
+
 .navbar{
   height: 80px;
   .wrapper{
@@ -53,7 +55,38 @@
         }
       }
     }
+
   }
+}
+@media screen and (max-width: 1130px) {
+  .navbar{
+    height: 40px;
+    .wrapper{
+      justify-content: flex-start;
+      padding:10px 10px;
+      .item{
+        .image{
 
-
+        }
+      }
+      .left,
+      .center {
+        display: none;
+      }
+      .right{
+        gap:10px;
+        .item{
+          .link{
+            font-size: 12px;
+          }
+        }
+        .icons{
+          gap:5px;
+          .icon{
+            height: 15px;
+          }
+        }
+      }
+    }
+  }
 }
