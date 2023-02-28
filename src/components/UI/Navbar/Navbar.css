@@ -62,12 +62,18 @@
     padding: 10px 10px;
   }
   .navbar .wrapper .left {
+    gap: 10px;
+  }
+  .navbar .wrapper .left .item .link {
+    font-size: 10px;
+  }
+  .navbar .wrapper .left .item:nth-child(1), .navbar .wrapper .left .item:nth-child(2) {
     display: none;
   }
   .navbar .wrapper .center {
     font-size: 10px;
     letter-spacing: normal;
-    margin-right: 10px;
+    margin: 0 10px;
     font-weight: 700;
   }
   .navbar .wrapper .right {

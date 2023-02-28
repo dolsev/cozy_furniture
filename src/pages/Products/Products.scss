@@ -30,3 +30,9 @@
     margin-bottom:50px;
   }
 }
+
+@media screen and (max-width: 940px){
+  .catImg{
+    display: none;
+  }
+}

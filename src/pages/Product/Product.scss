@@ -47,7 +47,6 @@
       button{
         padding:10px;
         border:none;
-        width:50px;
         height: 50px;
         display: flex;
         align-items:center;
@@ -59,7 +58,6 @@
               }
     }
     .add{
-      width:250px;
       padding: 10px;
       color:white;
       background-color: #046060;
@@ -69,6 +67,7 @@
       gap:20px;
       border:none;
       font-weight: 500;
+      max-width:150px;
     }
     .add:hover{
       background-color: #0fb4b4;
@@ -92,13 +91,133 @@
       font-size:14px;
       margin-top:30px;
     hr{
-      width:200px;
+      width:35%;
       border:1px solid #b7ceb1;
     }
+
+
     }
     hr{
-      width:700px;
+      width:50%;
       border:1px solid #b7ceb1;
     }
+
+    }
+}
+@media screen and (max-width: 1100px){
+  .product{
+    gap:15px;
+
+    .left{
+      .images{
+        img{
+        height: 50%;
+      }
+      }
+
+      .mainImg{
+        display:none;
+        img{
+        }
+      }}
+
+    .right{
+      gap:15px;
+
+      h1{
+        font-size: 18px;
+      }
+      .price{
+        font-size: 18px;
+      }
+      p{
+      font-size:14px;
+      }
+      .quantity{
+
+        button{
+
+        }
+      }
+      .add{
+
+      }
+      .add:hover{
+      }
+      .link{
+
+        .item{
+
+        }
+      }
+      .info{
+        font-size: 12px;
+        hr{
+
+        }
+
+
+      }
+      hr{
+
+      }
+
+    }
+  }}
+@media screen and (max-width: 800px){
+  .product{
+    flex-direction: column;
+    .left{
+      .images{
+        img{
+          height: 100%;
+        }
+        img:nth-child(2){
+          display: none;
+        }
+      }
+    }
+    .mainImg{
+      img{
+      }
+    }
+  }
+  .right{
+
+    .price{
+
+    }
+    p{
+
+    }
+    .quantity{
+
+      button{
+
+      }
+    }
+    .add{
+
+    }
+    .add:hover{
+    }
+    .link{
+
+      .item{
+
+      }
+    }
+    .info{
+
+      hr{
+
+      }
+
+
+    }
+    hr{
+
+    }
+
   }
 }

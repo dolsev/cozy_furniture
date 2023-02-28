@@ -66,16 +66,23 @@
       padding:10px 10px;
       .item{
         .image{
-
         }
       }
       .left{
-        display: none;
+        gap:10px;
+        .item{
+          .link{
+            font-size: 10px;
+          }
+        }
+        .item:nth-child(1),.item:nth-child(2){
+          display: none;
+        }
       }
       .center{
         font-size: 10px;
         letter-spacing: normal;
-        margin-right: 10px;
+        margin: 0 10px;
         font-weight: 700;
       }
       .right{
