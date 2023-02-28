@@ -48,9 +48,9 @@ const Navbar = () => {
                                 <SearchIcon  className='icon'/>
                                 <PersonOutlineIcon className='icon'/>
                                 <FavoriteBorderOutlinedIcon className='icon'/>
-                        <div className='cartIcon' onClick={()=>setOpen(!open)}>
-                      <ShoppingCartOutlinedIcon className='icon'/><span>0</span>
-                        </div>
+                              <div className='cartIcon' onClick={()=>setOpen(!open)}>
+                                  <ShoppingCartOutlinedIcon className='icon'/><span>0</span>
+                            </div>
                             </div>
                     </div>
             </div>

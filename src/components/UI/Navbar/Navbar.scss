@@ -58,7 +58,7 @@
 
   }
 }
-@media screen and (max-width: 1130px) {
+@media screen and (max-width: 1152px) {
   .navbar{
     height: 40px;
     .wrapper{
@@ -69,21 +69,36 @@
 
         }
       }
-      .left,
-      .center {
+      .left{
         display: none;
+      }
+      .center{
+        font-size: 10px;
+        letter-spacing: normal;
+        margin-right: 10px;
+        font-weight: 700;
       }
       .right{
         gap:10px;
         .item{
           .link{
-            font-size: 12px;
+            font-size: 10px;
           }
         }
         .icons{
           gap:5px;
           .icon{
-            height: 15px;
+            height: 12px;
+          }
+          .cartIcon{
+            bottom:5px;
+            span{
+              font-size: 7px;
+              width:10px;
+              height: 10px;
+              right: -1px;
+              top:-1px;
+            }
           }
         }
       }

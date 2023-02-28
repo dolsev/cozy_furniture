@@ -23,7 +23,7 @@ function Categories() {
                 <div className='row'>
                     <img alt='' src='https://images.unsplash.com/photo-1594760136382-0c07cc163715?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=709&q=80'/>
                     <button>
-                        <Link to='/products/1' className='link'>New Season</Link>
+                        <Link to='/products/1' className='link'>New</Link>
                     </button>
                 </div>
             </div>

@@ -20,5 +20,31 @@
   justify-content: center;
   gap: 50px;
 }
+@media screen and (max-width: 1000px) {
+  .featuredProducts {
+    margin: 50px 20px;
+  }
+  .featuredProducts .top {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .featuredProducts .top h1 {
+    flex: none;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  .featuredProducts .top p {
+    flex: none;
+    font-size: 13px;
+  }
+  .featuredProducts .bottom {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .featuredProducts .bottom .card:nth-child(3),
+  .featuredProducts .bottom .card:nth-child(4) {
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=FeaturedProducts.css.map */

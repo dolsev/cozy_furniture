@@ -33,7 +33,7 @@ const Footer = () => {
             <div className='bottom'>
                 <div className='left'>
                     <span className='logo'>Cozy Furniture</span>
-                    <span className='copyright'>©Copyright 2023. All Rights Reserved</span>
+                    <span className='copyright'>©2023 Vladislav Smirnov </span>
                 </div>
                 </div>
         </div>

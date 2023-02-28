@@ -7,11 +7,11 @@
   padding: 20px;
   -webkit-box-shadow: 0 0 7px -5px #234b18;
   box-shadow: 0 0 7px -5px #234b18;
-   h1{
-     color:gray;
-     font-weight: 400;
-     font-size: 24px;
-   }
+  h1{
+    color:gray;
+    font-weight: 400;
+    font-size: 24px;
+  }
   .item{
     display: flex;
     align-items: center;
@@ -68,4 +68,33 @@
     font-size:12px;
     cursor: pointer;
   }
+
+
+}
+@media screen and (max-width: 800px) {
+  .cart{
+  h1 {
+    font-size: 20px;
+  }
+  .item {
+    img {
+      margin-right: 5px;
+      margin-bottom: 5px;
+    }
+    .details {
+      h1 {
+        font-size: 14px;
+      }
+      p {
+        font-size: 12px;
+      }
+    }
+    .delete {
+      height: 30px;
+    }
+  }
+  .total {
+    font-size: 14px;
+  }
+}
 }
