@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import SearchIcon from '@mui/icons-material/Search';
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
@@ -6,13 +6,15 @@ import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlin
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import {Link} from 'react-router-dom'
 import './Navbar.scss'
+import Cart from "../../Cart/Cart";
 const Navbar = () => {
+    const [open,setOpen] = useState(false)
     return (
         <div className='navbar'>
             <div className='wrapper'>
             <div className='left'>
                 <div className='item'>
-                    <img className='image' src='/img/Flag_of_Russia.svg.png' alt=''/>
+                    <img className='image' src='https://upload.wikimedia.org/wikipedia/en/f/f3/Flag_of_Russia.svg' alt=''/>
                     <KeyboardArrowDownIcon/>
                 </div>
                 <div className='item'>
@@ -45,12 +47,13 @@ const Navbar = () => {
                             <div className='icons'><SearchIcon/>
                        <PersonOutlineIcon/>
                   <FavoriteBorderOutlinedIcon/>
-                        <div className='cartIcon'>
+                        <div className='cartIcon' onClick={()=>setOpen(!open)}>
                       <ShoppingCartOutlinedIcon/><span>0</span>
                         </div>
                             </div>
                     </div>
             </div>
+            {open&&<Cart/>}
         </div>
     );
 };
