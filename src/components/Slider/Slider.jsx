@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import './Slider.scss'
@@ -28,7 +28,7 @@ function Slider() {
                     return(
                         <div className={index===currentSlide?'slide active':'slide'} key={index}>
                             {index===currentSlide&&(
-                                <img src={data[currentSlide]} alt='furniture image'
+                                <img src={data[currentSlide]} alt='furniture'
                                      className='image'/>
                             )}
                         </div>
@@ -38,7 +38,7 @@ function Slider() {
 
             </div>
             <div className='icons'>
-                <div className='icon'onClick={prevSlide}><KeyboardArrowLeftIcon/></div>
+                <div className='icon' onClick={prevSlide}><KeyboardArrowLeftIcon/></div>
                 <div className='icon' onClick={nextSlide}><KeyboardArrowRightIcon/></div>
             </div>
         </div>
