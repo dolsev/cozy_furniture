@@ -11,7 +11,10 @@
   position: relative;
   overflow: hidden;
 }
-.card .imagehover .secondImg {
+.card .image .mainImg {
+  z-index: 1;
+}
+.card .image:hover .secondImg {
   z-index: 2;
 }
 .card .image img {
@@ -20,12 +23,9 @@
   object-fit: cover;
   position: absolute;
 }
-.card .image img .mainImg {
-  z-index: 1;
-}
 .card .image span {
   position: absolute;
-  z-index: 1;
+  z-index: 3;
   top: 5px;
   left: 5px;
   background-color: white;
@@ -33,9 +33,6 @@
   padding: 3px 5px;
   font-weight: 500;
   font-size: 12px;
-}
-.card .image:hover {
-  opacity: 80%;
 }
 
 h2 {
