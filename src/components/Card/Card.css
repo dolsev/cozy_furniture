@@ -9,13 +9,19 @@
   width: 100%;
   height: 400px;
   position: relative;
-  transition: transform 1s;
-  transform: scale(100%);
+  overflow: hidden;
+}
+.card .imagehover .secondImg {
+  z-index: 2;
 }
 .card .image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  position: absolute;
+}
+.card .image img .mainImg {
+  z-index: 1;
 }
 .card .image span {
   position: absolute;

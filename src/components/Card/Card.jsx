@@ -8,6 +8,7 @@ function Card({item}) {
             <div className='image'>
                 {item.isNew&&<span>New Collection</span>}
                 <img src={item.img} alt='' className='mainImg'/>
+                <img src={item.img2} alt='' className='secondImg'/>
             </div>
             <h2>{item.title}</h2>
             <div className='prices'>
