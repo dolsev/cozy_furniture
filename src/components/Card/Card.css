@@ -29,8 +29,7 @@
   font-size: 12px;
 }
 .card .image:hover {
-  transition: transform 1s;
-  transform: scale(105%);
+  opacity: 80%;
 }
 
 h2 {
