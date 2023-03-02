@@ -48,7 +48,7 @@ h2{
   h3{
     font-size:18px;
     font-weight: 500;
-    &:first-child{
+    &:nth-child(2){
       color:gray;
       text-decoration: line-through;
     }

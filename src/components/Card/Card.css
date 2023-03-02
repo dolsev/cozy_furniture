@@ -48,7 +48,7 @@ h2 {
   font-size: 18px;
   font-weight: 500;
 }
-.prices h3:first-child {
+.prices h3:nth-child(2) {
   color: gray;
   text-decoration: line-through;
 }
