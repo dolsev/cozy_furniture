@@ -31,22 +31,39 @@
   object-fit: cover;
   margin-bottom: 50px;
 }
-
 @media screen and (max-width: 940px) {
   .products {
     padding: 10px 25px;
+    flex-wrap: wrap;
+  }
+  .products .left {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 20px;
   }
   .products h2 {
     font-size: 12px;
+    margin-bottom: 10px;
   }
   .products h3 {
     font-size: 10px;
+    margin-bottom: 10px;
   }
   .products .catImg {
     display: none;
   }
-  .products label, .products span {
+  .products label,
+  .products span {
     font-size: 14px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .products .inputItem {
+    flex-direction: column;
+  }
+  .products .inputItem label {
+    margin-left: 0;
+    margin-bottom: 5px;
   }
 }
 

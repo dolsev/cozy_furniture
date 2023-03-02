@@ -13,11 +13,11 @@ const Navbar = () => {
         <div className='navbar'>
             <div className='wrapper'>
             <div className='left'>
-                <div className='item'>
+                <div className='item disabled-link'>
                     <img className='image' src='https://upload.wikimedia.org/wikipedia/en/f/f3/Flag_of_Russia.svg' alt=''/>
                     <KeyboardArrowDownIcon/>
                 </div>
-                <div className='item'>
+                <div className='item disabled-link'>
                     <span>RUB</span>
                     <KeyboardArrowDownIcon/>
                 </div>
@@ -32,22 +32,22 @@ const Navbar = () => {
                         <Link className='link' to='/'>COZY FURNITURE</Link>
                     </div>
             <div className='right'>
-                        <div className='item'>
+                        <div className='item disabled-link'>
                             <Link className='link' to='/'>Homepage</Link>
                         </div>
-                        <div className='item'>
-                            <Link className='link' to='/products/2'>About</Link>
+                        <div className='item disabled-link'>
+                            <Link className='link' to='/'>About</Link>
                         </div>
-                        <div className='item'>
-                            <Link className='link' to='/products/2'>Contact</Link>
+                        <div className='item disabled-link'>
+                            <Link className='link' to='/'>Contact</Link>
                         </div>
-                        <div className='item'>
-                            <Link className='link' to='/products/2'>Stores</Link>
+                        <div className='item disabled-link'>
+                            <Link className='link' to='/'>Stores</Link>
                         </div>
                             <div className='icons'>
-                                <SearchIcon  className='icon'/>
-                                <PersonOutlineIcon className='icon'/>
-                                <FavoriteBorderOutlinedIcon className='icon'/>
+                                <SearchIcon  className='icon disabled-link'/>
+                                <PersonOutlineIcon className='icon disabled-link'/>
+                                <FavoriteBorderOutlinedIcon className='icon disabled-link'/>
                               <div className='cartIcon' onClick={()=>setOpen(!open)}>
                                   <ShoppingCartOutlinedIcon className='icon'/><span>0</span>
                             </div>
