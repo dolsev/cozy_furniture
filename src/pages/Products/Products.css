@@ -40,6 +40,7 @@
     width: 100%;
     padding-right: 0;
     margin-bottom: 20px;
+    position: relative;
   }
   .products h2 {
     font-size: 12px;
