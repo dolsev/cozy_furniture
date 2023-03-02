@@ -6,7 +6,7 @@ function FeaturedProducts({type}) {
         {id:1,
             img:'https://images.unsplash.com/photo-1592078615290-033ee584e267?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80',
             img2:'https://images.unsplash.com/photo-1581539250439-c96689b516dd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80',
-            title:'Chair Comfy',
+            title:'Chair Comefy',
             isNew:true,
             oldPrice:3500,
             price:2499
