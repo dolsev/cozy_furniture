@@ -26,11 +26,11 @@ const router = createBrowserRouter(
                 },
                 {
                     path:'/products/:id',
-                    element:<Products />
+                    element:<Products/>
                 },
                 {
                     path:'/product/:id',
-                    element:<Product />
+                    element:<Product/>
                 }
             ]
         }
