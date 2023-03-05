@@ -3,11 +3,16 @@ import './Product.scss'
 import {AddShoppingCartOutlined} from "@mui/icons-material";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import {BalanceOutlined} from "@mui/icons-material";
+import dataTable from "../../data";
+import {useParams} from "react-router-dom";
 const Product = () => {
+    const { id } = useParams();
+    const selectedItem = dataTable.find(item => item.id === parseInt(id));
+
     const [selectedImg,setSelectedImg] = useState(0)
     const [quantity,setQuantity] = useState(1)
-    const images= ['https://images.unsplash.com/photo-1592078615290-033ee584e267?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80',
-        'https://images.unsplash.com/photo-1581539250439-c96689b516dd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80'
+    const images= [selectedItem.img,
+        selectedItem.img2
 ]
     return (
         <div className='product'>
@@ -21,9 +26,9 @@ const Product = () => {
                 </div>
             </div>
             <div className='right'>
-                <h1>Chair Comfy</h1>
-                <span className='price'>2499 ₽</span>
-                <p>This chair is amazing.This chair is amazing.This chair is amazing.This chair is amazing.</p>
+                <h1>{selectedItem.title}</h1>
+                <span className='price'>{selectedItem.price} ₽</span>
+                <p>Trully amazing furniture.</p>
                 <div className='quantity'>
                     <button onClick={()=>setQuantity(prevState=>prevState===1?1:prevState-1)}>-</button>
                     {quantity}
