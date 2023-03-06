@@ -5,12 +5,15 @@ import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlin
 import {BalanceOutlined} from "@mui/icons-material";
 import dataTable from "../../data";
 import {useParams} from "react-router-dom";
+import {useDispatch} from "react-redux";
+import {addToCart} from "../../redux/cartReducer";
 const Product = () => {
     const { id } = useParams();
     const selectedItem = dataTable.find(item => item.id === parseInt(id));
 
     const [selectedImg,setSelectedImg] = useState(0)
     const [quantity,setQuantity] = useState(1)
+    const dispatch = useDispatch()
     const images= [selectedItem.img,
         selectedItem.img2
 ]
@@ -34,7 +37,14 @@ const Product = () => {
                     {quantity}
                     <button onClick={()=>setQuantity(prevState=>prevState+1)}>+</button>
                 </div>
-                <button className='add'><AddShoppingCartOutlined/>ADD TO CART</button>
+                <button className='add' onClick={()=>dispatch(addToCart({
+                    id:selectedItem.id,
+                    title:selectedItem.title,
+                    desc:selectedItem.desc,
+                    price:selectedItem.price,
+                    img:selectedItem.img,
+                    quantity
+                }))}><AddShoppingCartOutlined/>ADD TO CART</button>
                 <div className='link'>
                     <div className='item'><FavoriteBorderOutlinedIcon/>ADD TO WISHLIST</div>
                     <div className='item'><BalanceOutlined/>ADD TO COMPARE</div>
